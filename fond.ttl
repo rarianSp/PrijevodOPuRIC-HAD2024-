@@ -1,0 +1,31 @@
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+<HR-DABJ-125> a rico:RecordSet ;
+    rico:identifier "SIGNATURA 41 PO" ;    
+    rico:identifier "SIGNATURA 125 PO" ; 
+    rico:identifier "HR DABJ 125" ; 
+    rico:name "DARUVARSKA PIVOVARA, tvornica piva, žestokih pića i destilerija (GRAĐANSKA PIVOVARA D.D.) DARUVAR" ; 
+    rico:isAssociatedWithDate [ a               rico:beginningDate ;
+								rico:normalizedDate       "1920" ;
+								] ;
+	rico:isAssociatedWithDate [ a               rico:endDate ;
+								rico:normalizedDate      "1948" ;
+								] ;
+    rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "5" ;
+							rico:unitOfMeasurement "knjiga" ;
+                            rdfs:comment "financijskih knjiga" ;
+							] ,
+                    [ a rico:RecordResourceExtent ;
+                            rico:quantity "3" ;
+                            rico:unitOfMeasurement "fascikla" ;
+                            ] ;
+    rico:recordResourceStructure "fragmentirano sačuvano" , "detaljno sređeno" ;
+    rico:includesOrIncluded <knjige> , <spisi> ;
+    #svaku seriju opisati u zasebnoj ttl datoteci te u nju opisati sadrzajnu fizionomiju fonda
+    rico:hasOrHadLanguage "hrvatskosrpski" , "njemački" , "latinica" , "rukopis" , "strojopis" ;
+    rico:isOrWasDescribedBy <https://hais.arhiv.hr/HDA/trazilica/obavijesna-pomagala/4080be30-c7ef-4688-b87f-3e6e95f526b6> .
+    #opisati stvaratelja u zasebnoj ttl datoteci i razdvojiti podatke na strukturu i povijest stvaratelja
+    

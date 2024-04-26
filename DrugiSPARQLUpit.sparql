@@ -1,0 +1,26 @@
+PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?Tvrtka ?Pouzdanost
+WHERE {
+  {
+    ?corpBody a rico:CorporateBody ;
+              rico:name ?Tvrtka ;
+              rico:isAssociatedWithDate ?date .
+
+    ?date rico:dateQualifier ?dateQualifier .
+    FILTER(?dateQualifier != "pouzdan datum")
+    BIND(?dateQualifier AS ?Pouzdanost)
+  }
+  UNION
+  {
+    ?agent a rico:Agent ;
+           rico:name ?Tvrtka ;
+           rico:isAssociatedWithDate ?date .
+
+    ?date rico:dateQualifier ?dateQualifier .
+    FILTER(?dateQualifier != "pouzdan datum")
+    BIND(?dateQualifier AS ?Pouzdanost)
+  }
+}

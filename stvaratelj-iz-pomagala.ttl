@@ -1,0 +1,118 @@
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+<DaruvarskaPivovaraTvornicaPivaIDestilerija> a rico:CorporateBody ;
+	rico:followsInTime <GradanskaPivovaraDDDaruvar> ;
+    rico:hasOrHadAgentName [
+        a rico:AgentName ;
+        rico:name "Daruvarska pivovara, tvornica piva, žestokih pića i destilerija" ;
+        rico:beginningDate "1948" ;
+        rico:endDate "1971" ;
+    ] ;
+    rico:name "Daruvarska pivovara, tvornica pića i destilarija" ;
+    rico:isAssociatedWithDate [ a rico:beginningDate ;
+								rico:normalizedDate       "1948" ;
+                                rico:dateQualifier "potrebno je provjeriti svojstvo pouzdanosti vremena" ;
+								] ;
+	rico:isAssociatedWithDate [ a rico:endDate ;
+								rico:normalizedDate      "1971" ;
+                                rico:dateQualifier "pouzdan datum" ;
+								] ;
+    rico:history "" ;
+    rico:isCreatorOf <HR-DABJ-125> ;
+    rico:isOrWasDescribedBy <https://hais.arhiv.hr/HDA/trazilica/obavijesna-pomagala/4080be30-c7ef-4688-b87f-3e6e95f526b6> .
+
+<Pivara> a rico:Agent ;
+    rico:precedesInTime <DaruvarskaPivara> ;
+	rico:name "Pivara" ;
+	rico:isAssociatedWithDate [ a rico:Date ;
+								rico:expressedDate       "19. st." ;
+                                rico:dateQualifier "potrebno je provjeriti svojstvo pouzdanosti vremena" ;
+								] ;
+	rico:history "Grof Izidor Janković sagradio je 1840. g. u Daruvaru pivovaru za potrebe vlastelinstva. Godišnji kapacitet iznosio je 600-1000 hl. Ekonomske i političke prilike odumiranja feudalnih odnosa - dovode do prodaje imanja porodice Janković, a među inim i pivovare i vinskih podruma." .
+
+<DaruvarskaPivara> a rico:CorporateBody ;
+	rico:precedesInTime <DaruvarskaDionickaPivovara> ;
+	rico:followsInTime <Pivara> ;
+	rico:name "Daruvarska pivara" ;
+	rico:isAssociatedWithDate [ a rico:beginningDate ;
+								rico:normalizedDate       "1897" ;
+                                rico:dateQualifier "pouzdan datum" ;
+								] ;
+	rico:isAssociatedWithDate [ a rico:endDate ;
+								rico:normalizedDate      "1900" ;
+                                rico:dateQualifier "pouzdan datum" ;
+								] ;
+	rico:history "1893. pivovaru preuzimaju tadašnji daruvarski građani Franjo Urner, Vaclav Hledig, Azdratal Berger, Lavoslav Breslauer, Dr. Ilija Kurcshenstein, Pollak, Dobrović i dr. " .
+
+<DaruvarskaDionickaPivovara> a rico:CorporateBody ;
+	rico:precedesInTime <DaruvarskaDionickaPivovaraIMunjara> ;
+	rico:followsInTime <DaruvarskaPivara> ;
+	rico:name "Daruvarska dionicka pivovara" ;
+	rico:isAssociatedWithDate [ a rico:beginningDate ;
+								rico:normalizedDate       "1900" ;
+                                rico:dateQualifier "pouzdan datum" ;
+								] ;
+	rico:isAssociatedWithDate [ a rico:endDate ;
+								rico:normalizedDate      "1911" ;
+                                rico:dateQualifier "pouzdan datum" ;
+								] ;
+	rico:history "Osnovana je Daruvarska dionička pivovara koja je registrirana 03.12.1900. kod Kotarskog suda u Pakracu. Društvo je osnovano na nepredviđeno vrijeme sa temeljnom glavnicom od 250 000 K, uz dionice po 200 Kruna. Zadatak je društva da proizvodi pivo i sporedno s tim vezane tvorevine te da pivo i tvorevine rasprodaje. Zadaci, glavnica i dionice upravljanje, bilanca, trajanje društva i odnosi regulirani su Pravilima. Najviši organ je Glavna skupština. Ona se održava svake godine po zaključku godišnje bilance. Izvanrednu skupštinu može sazvati: 1. kad ravnateljstvo smatra potrebnim da se sazove, 2. kad Nadzorno vijeće u svom službenom djelovanju otkrije ruke zloupotrebe i 3. kad 5 ili više dioničara koji posjeduju bar 1 trećinu glavnice zahtijevaju to od ravnateljstva, a polože u društvenu blagajnu svoje dionice i naznače uzrok i svrhu saziva. Sva prava koja pripadaju dioničarima rješavaju se na glavnoj skupštini, koju mora sačinjavati najmanje četiri petine izdanih dionica. Glavna skupština odlučuje o sljedećim predmetima: a) izvještaju ravnateljstva o poslovima društva u minuloj godini, zaključenoj bilanci i raspodjeli čistog dobitka. b) izvještaju nadzornog vijeća o zaključnoj bilanci. c) izboru i razrješenju dužnosti ravnateljstva i nadzornog vijeća, d) umanjenju ili povišenju temeljne glavnice, e) promjeni pravila, sklapanju kartelnih ugovora, fuzije, likvidacije društva i dr. Ravnateljstvo se sastoji od 5-8 članova koje bira glavna skupština na 3 godine. Ravnateljstvo vodi i obavlja sve društvene probleme, zastupa društvo, imenuje i otpušta službenike i radnike, utvrđuje njihove plaće i djelokrug poslovanja. Ravnateljstvo ima pravo poslovanja do iznosa jedne trećine dioničarske glavnice društvene nekretnine. Za daljnji iznos ili zajam treba zaključak glavne skupštine. Nadzorno vijeće sastoji se od 4-6 članova, a bira se na 2 godine. Nadzorno vijeće nadzire čitavo poslovanje društva. Članovi ravnateljstva po zaključnoj bilanci dobivaju 10% od svakog dobitka, a nadzorno vijeće po 5%. Preostatak dijeli se kao razdjelak na dionice. 1903. g. društvo modernizira pivovaru, ali se kapacitet kreće stalno oo 1000 hl pia godišnje. Opterećenjem glavnice društvo podiže zajam i nabavlja generator za vlastitu električnu centralu. 6.12.1906. g. Pivovara sklapa ugovor s Općinskim poglavarstvom trgovišta Daruvar o isporuci električne energije s koncesijom od 20 g. 11.05.1907. god. Pivovara je počela isporučivati struju prema ugovoru za gradsku rasvjetu i kućanstvo i to za 106 rasvjetnih mjesta od 32 W i 6 rasvjetnih mjesta po 1000 W." .
+
+<DaruvarskaDionickaPivovaraIMunjara> a rico:CorporateBody ;
+	rico:precedesInTime <GradanskaPivovaraDDDaruvar> ;
+	rico:followsInTime <DaruvarskaDionickaPivovara> ;
+	rico:name "Građanska dionička pivovara i munjara" ;
+	rico:isAssociatedWithDate [ a rico:beginningDate ;
+								rico:normalizedDate       "1907" ;
+                                rico:dateQualifier "potrebno je provjeriti svojstvo pouzdanosti vremena" ;
+								] ;
+	rico:isAssociatedWithDate [ a rico:endDate ;
+								rico:normalizedDate      "1927" ;
+                                rico:dateQualifier "pouzdan datum" ;
+								] ;
+	rico:history "1907. g. tvrtka mijenja naziv u Građanska dioničarska pivovara i munjara. Zadatak društva se proširuje na proizvodnju i prodaju električne energije za rasvjetu i obrtne svrhe i sve poslove spadajuće u elektrotehniku. 29.03.1913. na izvanrednoj glavnoj skupštini prihvaćena je promjena društvenih Pravila, a prema kojoj je otpisana radi gubitaka cijela dotadašnja dionička glavnica, a dionice izdane 1903. g. postale su bezvrijedne. Utvrđena je nova temeljna glavnica od 150000 k, koja je podijeljena na 1250 dionica po 120 k. Djelokrug rada proširuje se još na prodaju vina i žestokih pića. 06.01.1917. temeljna glavnica povišena je na iznos od 300000 k. izdanjem novih 1250 komada dionica po 120 k. Izmjenom Pravila dopunjen je zadatak i svrha društva: proizvodnja piva, umjetnog leda i električne struje, nadalje pečenje voćne rakije i naručenje time skopčanih otpadaka sirovine i trgovine žestokih pića i vina. 18.11.1918. g. temeljna glavnica povećanja je na 600000 k., a sastoji se od 5000 dionica nominalne vrijednosti od 120 k. Jednogodišnji promet iznaša 1000000 kruna. Tvrtka do 1918. g. prosječno zapošljava 20-25 radnika i 5 činovnika. Poslije I. svjetskog rata kupnjom dionica postepeno preuzima upravljanje tvrtkom porodica Gross, da bi faktički već 1925. g. prešla u njihovo vlasništvo. Naime, od 5000 dionica porodica Gross posjedovala je 4680 dionica. " .
+
+<GradanskaPivovaraDDDaruvar> a rico:CorporateBody ;
+	rico:precedesInTime <DaruvarskaPivovaraTvornicaPivaIDestilerija> ;
+	rico:followsInTime <DaruvarskaDionickaPivovaraIMunjara> ;
+	rico:name "Građanska pivovara d.d. Daruvar" ;
+	rico:isAssociatedWithDate [ a  rico:beginningDate ;
+								rico:normalizedDate       "1927" ;
+                                rico:dateQualifier "potrebno je provjeriti svojstvo pouzdanosti vremena" ;
+								] ;
+	rico:isAssociatedWithDate [ a rico:endDate ;
+								rico:normalizedDate      "1947" ;
+                                rico:dateQualifier "pouzdan datum" ;
+								] ;
+	rico:history "31.03.1928. g. tvrtka mijenja naziv u Građanska pivovara dioničarsko društvo Daruvar. Naime, 20-godišnji ugovor s općinskim poglavarstvom trgovišta Daruvar o snabdijevanju grada strujom je istakao, a u međuvremenu je Općinsko poglavarstvo trgovišta Daruvar sagradilo vlastitu električnu centralu pa je munjara brisana iz trgovačkog registra. Kao sporednom djelatnošću tvrtka se bavila i od 1920. g. točenjem alkoholnih pića na malo, tj. vođenjem gostioničarskog obrta, da bi 1931. otvorila dvije restauracije na željezničkoj stanici i uz pivovaru. 1925-1930. g. značajne su za razvoj pivovare. Velikim ulaganjem i proširivanjem pogona s oko 2000 hl u 1925. g. na oko 10000 hl piva u 1931. godini. Ovaj se kapacitet nije mijenjao da kraja drugoga svjetskog rata. 1926. g. nabavljen je motor za upojni plin od 40 KS, a 1930. od 55 KS. Također su nabavljeni i svi mjerni aparati: vrioni podrum popunjen je s 13 novih vrionika od 2400 l, a punionica s jednim aparatom za punjenje boca. Nakon 1930. g. dolazi do naglog opadanja potrošnje piva, da bi 1936. g. opalo za 60-80%. Glavni razlog opadanja potrošnje je veliko opterećenje trošarinom, koja je uzrok slabljenja potrošačke snage. Ukupna trošarina iznosi 90% od proizvodne cijene, dok je nasuprot tom trošarina na vino i rakiju ukinuta. Cijena piva je visoka, dok je cijena vinu i rakiji niska. Pivovare rade s velikim gubitcima. Građanska pivovara d.d. u Daruvaru da bi pokrila deficit u pivarstvu otvara 1934. Tvornicu žeste i rafineriju u Badljevini, skladište u Orahovici (1935) i Podravskoj Slatini (1935). Već je  od 1928. imala svoje skladište u Virovitici. Iste godine tvrtka otvara u svojim prostorijama uz restauraciju kinematograf u Daruvaru koji prodaje 1940. dr. Dowalu iz Pitomače za 60000 din, a prostorije koje pripadaju kinematografu iznajmljuje na 3 godine. Građanska pivovara od 1934. g. radi neprekidno s gubitkom. Između dva rata zapošljava 30-40 radnika. Proizvodile su se tri vrste piva: svijetlo imperial, Gambimue i crno Porter. Pivo se prodavalo i otpremalo pored lokalnog tržišta u Šibenik, Sombor, Sentu, Vukovar, Sl. Brod, Derventu, Doboj i Jajce. Početkom 1941. g. (23.01.1941.) tvrtka ponovno mijenja vlasnika. Novi vlasnik je Viktor Hrešić, vlasnik mljekare Zdenka iz V. Zdenaca već 1942. g. započinje gradnju nove sadašnje pivovare, koja je završena krajem rata. 20.03.1943. g. povišena je temeljna glavnica na 1000000 k sa 150000 kruna u 1941. g. upisom novih 28355 i jedna trećina dionica nominale po 30 kruna. Od ukupno registriranih 4055 dionica Viktor Hrešić posjedovao je 31973 i jednu trećinu dionica. Građanska pivovara d.d. u periodu 1941-1944. poslovala je s malim dobitkom. Svu svoju proizvodnju tvrtka je usmjerila za potrebe okupatora. Nakon oslobođenja pivaru preuzima narodna vlast i postavlja povjerenika. U studenom 1944. pivovara već radi za potrebe NOV i nalazi se u sastavu Odjela industrije Oblasnog NOO-a za Slavoniju. Tijekom rata Građanska pivovara d.d. pretrpila je štetu od 1203736 dinara. U periodu 1945-1948. dugoročnim kreditima Savezne planske komisije za investicijska i obrtna sredstva Građanska pivovara u Daruvaru u potpunosti je sanirana (novi strojevi nabavljeni su iz ČSSR) i započela je rad punim kapacitetom. 05.10.1948. g. iz sastava zagrebačke pivovare izdvojena je sladara Sisak i pripojena Daruvarskoj pivovari." .
+
+<DDPrometIIndIzradaZemaljskihProizvUDaruvaru> a rico:CorporateBody ;
+	rico:isRelatedTo <DaruvarskaDionickaPivovaraIMunjara> ;
+    rico:name "Dioničko društvo za promet i industrijsku izradu zemaljskih proizvoda u Daruvaru" ;
+    rico:isAssociatedWithDate [ a rico:beginningDate ;
+								rico:normalizedDate "1922-04-15" ;
+                                rico:dateQualifier "pouzdan datum" ;
+								] ;
+rico:history "15.4.1922. g. uz dioničku pivovaru registrirano je i Dioničko društvo za promet i industrijsku izradu zemaljskih proizvoda u Daruvaru. To je tvornica tuljaka kojom rukovodi ravnateljstvo dioničke pivovare. Tvornica je snabdijevena s 8 strojeva za pletivo tuljaka i upošljava 18 radnica koje rade dnevno od 7-12 i 13-18 sati." .
+
+<TvornicaZesteIRafinerijaUBadljevini> a rico:CorporateBody ;
+	rico:isRelatedTo <GradanskaPivovaraDDDaruvar> ;
+    rico:name "Tvornica žeste i rafineriju u Badljevini" ;
+    rico:isAssociatedWithDate [ a rico:beginningDate ;
+								rico:normalizedDate "1934" ;
+                                rico:dateQualifier "pouzdan datum" ;
+								] .
+
+<Kinematograf> a rico:CorporateBody;
+    rico:isRelatedTo <GradanskaPivovaraDDDaruvar> ;
+    rico:name "Kinematograf" ;
+    rico:isAssociatedWithDate [ a rico:beginningDate ;
+								rico:normalizedDate "1928" ;
+                                rico:dateQualifier "pouzdan datum" ;
+								] ;
+    rico:isAssociatedWithDate [a rico:endDate ;
+                                rico:normalizedDate "1940" ;
+                                rico:dateQualifier "pouzdan datum" ;
+                                ] .

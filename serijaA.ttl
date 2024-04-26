@@ -1,0 +1,76 @@
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+<SerijaAKnjige> a rico:RecordSet ;
+    rico:identifier "a" ;
+	rico:name "Knjige" ;
+	rico:isDirectlyIncludedIn <HR-DABJ-125> ;
+	rico:includesOrIncluded <KnjigaBilance> , <GlavnaKnjiga> , <ZbirniSalda-kontiVjerovnici> , <ZbirniSalda-kontiDuznici> .
+<KnjigaBilance> a rico:Record ;
+	rico:name "Knjiga bilance, 1941-1945" ;
+	rico:isDirectlyIncludedIn <SerijaAKnjige> ;
+	rico:directlyPrecedesInSequence <GlavnaKnjiga> ;
+	rico:isAssociatedWithDate [ a               rico:beginningDate ;
+								rico:normalizedDate       "1941" ;
+								] ;
+	rico:isAssociatedWithDate [ a               rico:endDate ;
+								rico:normalizedDate      "1945" ;
+								] ;
+	rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "svezak" ;
+							] .
+<KnjigaBilance-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <KnjigaBilance> ;
+	rico:hasCarrierType <papir> .
+<GlavnaKnjiga> a rico:Record ;
+	rico:name "Glavna knjiga, 1941-1945" ;
+	rico:isDirectlyIncludedIn <SerijaAKnjige> ;
+	rico:directlyPrecedesInSequence <ZbirniSalda-kontiVjerovnici> ;
+	rico:isAssociatedWithDate [ a               rico:beginningDate ;
+								rico:normalizedDate       "1941" ;
+								] ;
+	rico:isAssociatedWithDate [ a               rico:endDate ;
+								rico:normalizedDate      "1945" ;
+								] ;
+	rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "2" ;
+							rico:unitOfMeasurement "svezak" ;
+							] .
+<GlavnaKnjiga-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <GlavnaKnjiga> .
+<ZbirniSalda-kontiVjerovnici> a rico:Record ;
+	rico:name "Zbirni salda-konti (vjerovnici) 1941-1945" ;
+	rico:isDirectlyIncludedIn <SerijaAKnjige> ;
+	rico:directlyPrecedesInSequence <ZbirniSalda-kontiDuznici> ;
+	rico:isAssociatedWithDate [ a               rico:beginningDate ;
+								rico:normalizedDate       "1941" ;
+								] ;
+	rico:isAssociatedWithDate [ a               rico:endDate ;
+								rico:normalizedDate      "1945" ;
+								] ;
+	rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "svezak" ;
+							] .
+<ZbirniSalda-kontiVjerovnici-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <ZbirniSalda-kontiVjerovnici> .
+<ZbirniSalda-kontiDuznici> a rico:Record ;
+	rico:name "Zbirni salda-konti (dužnici), 1941-1944" ;
+	rico:isDirectlyIncludedIn <SerijaAKnjige> ;
+	rico:isAssociatedWithDate [ a               rico:beginningDate ;
+								rico:normalizedDate       "1941" ;
+								] ;
+	rico:isAssociatedWithDate [ a               rico:endDate ;
+								rico:normalizedDate      "1944" ;
+								] ;
+	rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "svezak" ;
+							] .
+<ZbirniSalda-kontiDuznici-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <ZbirniSalda-kontiDuznici> .
+<papir> a rico:CarrierType .
+    
+    

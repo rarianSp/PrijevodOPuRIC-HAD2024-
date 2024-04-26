@@ -1,0 +1,31 @@
+PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT ?Tvrtka (MIN(?beginDate) AS ?PocetnaGodina) (MAX(?endDate) AS ?ZavrsnaGodina) ?Odnos ?uOdnosuS
+WHERE {
+  ?corpBody a rico:CorporateBody ;
+            rico:name ?Tvrtka .
+  
+  OPTIONAL {
+    ?corpBody rico:isAssociatedWithDate [ a rico:beginningDate ;
+                                           rico:normalizedDate ?beginDate ] .
+  }
+
+  OPTIONAL {
+    ?corpBody rico:isAssociatedWithDate [ a rico:endDate ;
+                                           rico:normalizedDate ?endDate ] .
+  }
+
+  OPTIONAL {
+    ?corpBody ?relationshipPredicate ?related .
+    ?related rico:name ?uOdnosuS .
+    
+    BIND(IF(?relationshipPredicate = rico:precedesInTime, "prednik od", 
+         IF(?relationshipPredicate = rico:followsInTime, "sljednik od", 
+         IF(?relationshipPredicate = rico:isRelatedTo, "povezana tvrtka od", ""))) AS ?Odnos)
+  }
+
+  FILTER(BOUND(?Odnos) && ?Odnos != "")
+}
+GROUP BY ?Tvrtka ?uOdnosuS ?Odnos
+ORDER BY ?PocetnaGodina DESC(?Odnos)

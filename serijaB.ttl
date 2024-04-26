@@ -1,0 +1,253 @@
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+<SerijaBSpisi> a rico:RecordSet ;
+    rico:identifier "b" ;
+	rico:name "Spisi" ;
+	rico:isDirectlyIncludedIn <HR-DABJ-125> ;
+	rico:includesOrIncluded <OpciSpisiPoPredmetima> , <GlavneSkupstine> , <Varia> .
+<OpciSpisiPoPredmetima> a rico:RecordSet ;
+    rico:identifier "b1" ;
+    rico:name "Opći spisi po predmetima, 1920-1948." ;
+    rico:isDirectlyIncludedIn <SerijaBSpisi> ;
+    rico:directlyPrecedesInSequence <GlavneSkupstine> ;
+	rico:includesOrIncluded <ZbrikaIspravaIztrgovackogRegistra> , <InventariPivovare> , <DokumentiNabaveOsnovnihSredstavaIzInozemstva> , <OfertacijeZastupstvaZaMalinovSok> , <PopisiSkladistaIDepozitera> , 
+    <ZapisniciOPregleduPivovareOdStraneFinancijskihVlasti> , <KupoprodajaMajoritetaDionicaGradanskePivovare> , <KupoprodajaKinematografaUDaruvaru> , 
+    <FinancijskiPreliminarPivareIPotrebe> , <RatnaSteta> , <InvesticionoObrtniZajmovi> , <DokumentacijaRestorana> , <SladaraSisakPripojenje> ;
+    rico:isAssociatedWithDate [ a               rico:beginningDate ;
+								rico:normalizedDate       "1920" ;
+								] ;
+	rico:isAssociatedWithDate [ a               rico:endDate ;
+								rico:normalizedDate      "1948" ;
+								] ;
+	rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "svezak" ;
+							] .
+<OpciSpisiPoPredmetima-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <OpciSpisiPoPredmetima> ;
+	rico:hasCarrierType <papir> .
+<ZbrikaIspravaIztrgovackogRegistra> a rico:RecordSet ;
+    rico:identifier "b1a" ;
+    rico:name "Zbrika isprava iz trgovačkog registra 1920-1943." ;
+    rico:scopeAndContent "Podserija kod 1a) sadrži izvode iz trgovačkog registra Sudbenog stola u Požegi firma Daruvarska dioničarska pivovara i munjara i Građanska dionička pivovara i 35 komada odluka upravnih vlasti i pravosudnih organa o registraciji pojedinih pogona, pravila, potpisnika, članova ravnateljstva i sl." ;
+    rico:isDirectlyIncludedIn <OpciSpisiPoPredmetima> ;
+    rico:directlyPrecedesInSequence <InventariPivovare> ;
+    rico:isAssociatedWithDate [ a               rico:beginningDate ;
+								rico:normalizedDate       "1920" ;
+								] ;
+	rico:isAssociatedWithDate [ a               rico:endDate ;
+								rico:normalizedDate      "1943" ;
+								] .
+<ZbrikaIspravaIztrgovackogRegistra-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <ZbrikaIspravaIztrgovackogRegistra> ;
+	rico:hasCarrierType <papir> .
+<InventariPivovare> a rico:RecordSet ;
+    rico:identifier "b1b" ;
+    rico:name "Inventari pivovare, 1925, 1926, 1933." ;
+    rico:scopeAndContent "Podserija kod 1b) sadrži kompletne inventare pivovare po prostorijama od kancelarije, ležnik i vinskih podruma do strojarnice." ;
+    rico:isDirectlyIncludedIn <OpciSpisiPoPredmetima> ;
+    rico:directlyPrecedesInSequence <DokumentiNabaveOsnovnihSredstavaIzInozemstva> ;
+    rico:isAssociatedWithDate [ a               rico:Date ;
+								rico:normalizedDate       "1925" ;
+								] ;
+	rico:isAssociatedWithDate [ a               rico:Date ;
+								rico:normalizedDate      "1926" ;
+								] ;
+	rico:isAssociatedWithDate [ a               rico:Date ;
+								rico:normalizedDate      "1933" ;
+								] .
+<InventariPivovare-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <InventariPivovare> ;
+	rico:hasCarrierType <papir> .
+<DokumentiNabaveOsnovnihSredstavaIzInozemstva> a rico:RecordSet ;
+    rico:identifier "b1c" ;
+    rico:name "Inventari pivovare, 1925, 1926, 1933." ;
+    rico:scopeAndContent "Podserija 1c) sadrži kompletnu dokumentaciju nabave motora na upojni plin od 55 KS 1930. g. iz Njemačke i kontrolno-mjernih instrumenata 1931." ;
+    rico:isDirectlyIncludedIn <OpciSpisiPoPredmetima> ;
+    rico:directlyPrecedesInSequence <OfertacijeZastupstvaZaMalinovSok> ;
+    rico:isAssociatedWithDate [ a               rico:beginningDate ;
+								rico:normalizedDate       "1930" ;
+								] ;
+	rico:isAssociatedWithDate [ a               rico:endDate ;
+								rico:normalizedDate      "1931" ;
+								] .
+<DokumentiNabaveOsnovnihSredstavaIzInozemstva-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <DokumentiNabaveOsnovnihSredstavaIzInozemstva> ;
+	rico:hasCarrierType <papir> .
+<OfertacijeZastupstvaZaMalinovSok> a rico:RecordSet ;
+    rico:identifier "b1d" ;
+    rico:name "Ofertacije zastupstva za malinov sok, 1931." ;
+    rico:scopeAndContent "" ;
+    rico:isDirectlyIncludedIn <OpciSpisiPoPredmetima> ;
+    rico:directlyPrecedesInSequence <PopisiSkladistaIDepozitera> ;
+    rico:isAssociatedWithDate [ a               rico:Date ;
+								rico:normalizedDate       "1931" ;
+								] .
+<OfertacijeZastupstvaZaMalinovSok-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <OfertacijeZastupstvaZaMalinovSok> ;
+	rico:hasCarrierType <papir> .
+<PopisiSkladistaIDepozitera> a rico:RecordSet ;
+    rico:identifier "b1e" ;
+    rico:name "Popisi skladišta i depozitara, 1932" ;
+    rico:scopeAndContent "Podserija pod 1e) sadrži popise po mjestima skladišta i depozitera sa saldima 1932. godine." ;
+    rico:isDirectlyIncludedIn <OpciSpisiPoPredmetima> ;
+    rico:directlyPrecedesInSequence <ZapisniciOPregleduPivovareOdStraneFinancijskihVlasti> ;
+    rico:isAssociatedWithDate [ a               rico:Date ;
+								rico:normalizedDate       "1932" ;
+								] .
+<PopisiSkladistaIDepozitera-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <PopisiSkladistaIDepozitera> ;
+	rico:hasCarrierType <papir> .
+<ZapisniciOPregleduPivovareOdStraneFinancijskihVlasti> a rico:RecordSet ;
+    rico:identifier "b1f" ;
+    rico:name "Zapisnici o pregledu pivovare od strane financijskih vlasti, 1930, 1934." ;
+    rico:scopeAndContent "Podserija pod 1f) sadrži zapisnik o pregledu pivovare po financijskoj kontroli. Zapisnik sadrži opis svih prostorija, spisak po podnescima vrionika, dimenzije i zapremine sprava i sudova, karttelni opis sprava i način proizvodnje piva." ;
+    rico:isDirectlyIncludedIn <OpciSpisiPoPredmetima> ;
+    rico:directlyPrecedesInSequence <KupoprodajaMajoritetaDionicaGradanskePivovare> ;
+    rico:isAssociatedWithDate [ a               rico:Date ;
+								rico:normalizedDate       "1930" ;
+								] ;
+    rico:isAssociatedWithDate [ a               rico:Date ;
+								rico:normalizedDate       "1934" ;
+								] .
+<ZapisniciOPregleduPivovareOdStraneFinancijskihVlasti-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <ZapisniciOPregleduPivovareOdStraneFinancijskihVlasti> ;
+	rico:hasCarrierType <papir> .
+<KupoprodajaMajoritetaDionicaGradanskePivovare> a rico:RecordSet ;
+    rico:identifier "b1g" ;
+    rico:name "Kupoprodaja majoriteta dionica Građanske pivovare d.d. po V. Hreščiću, 1941." ;
+    rico:scopeAndContent "Podserija pod 1f) sadrži kupoprodajni ugovor od 20.01.1941., stanje knjigovodstva: glavne knjige i zalihe na dan 23.01.1941., stanje inventara i dr." ;
+    rico:isDirectlyIncludedIn <OpciSpisiPoPredmetima> ;
+    rico:directlyPrecedesInSequence <KupoprodajaKinematografaUDaruvaru> ;
+    rico:isAssociatedWithDate [ a               rico:Date ;
+								rico:normalizedDate       "1941" ;
+								] .
+<KupoprodajaMajoritetaDionicaGradanskePivovare-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <KupoprodajaMajoritetaDionicaGradanskePivovare> ;
+	rico:hasCarrierType <papir> .
+<KupoprodajaKinematografaUDaruvaru> a rico:RecordSet ;
+    rico:identifier "b1h" ;
+    rico:name "Kupoprodaja kinematografa u Daruvaru 1940-1943." ;
+    rico:scopeAndContent "Podserija pod 1h) sadrži kupoprodajni ugovor između građanske pivovare i dr. Milana Dorvolda iz Suhopolja o prodaji kino uređaja i iznajmljivanja dvorane i čekaonice na 3 god." ;
+    rico:isDirectlyIncludedIn <OpciSpisiPoPredmetima> ;
+    rico:directlyPrecedesInSequence <FinancijskiPreliminarPivareIPotrebe> ;
+    rico:isAssociatedWithDate [ a               rico:beginningDate ;
+								rico:normalizedDate       "1940" ;
+								] ;
+    rico:isAssociatedWithDate [ a               rico:endDate ;
+								rico:normalizedDate       "1943" ;
+								] .
+<KupoprodajaKinematografaUDaruvaru-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <KupoprodajaKinematografaUDaruvaru> ;
+	rico:hasCarrierType <papir> .
+<FinancijskiPreliminarPivareIPotrebe> a rico:RecordSet ;
+    rico:identifier "b1i" ;
+    rico:name "Financijski preliminar pivare i potrebe za 6 mjes. prema zahtjevu Obl.NOO-a za Slavoniju 1944." ;
+    rico:scopeAndContent "Posderija po 1i) sadrži dopis oblasnog NOO-a za Slavoniju br. 51 od 6.11.1944. i preliminar materijalnih potreba, kao i preliminar financijskih potreba pivovare za rok od 6 mjeseci." ;
+    rico:isDirectlyIncludedIn <OpciSpisiPoPredmetima> ;
+    rico:directlyPrecedesInSequence <RatnaSteta> ;
+    rico:isAssociatedWithDate [ a               rico:Date ;
+								rico:normalizedDate       "1944" ;
+								] .
+<FinancijskiPreliminarPivareIPotrebe-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <FinancijskiPreliminarPivareIPotrebe> ;
+	rico:hasCarrierType <papir> .
+<RatnaSteta> a rico:RecordSet ;
+    rico:identifier "b1j" ;
+    rico:name "Ratna šteta, 1945, 1946." ;
+    rico:scopeAndContent "Podserija pod 1j) sadrži kompletni dosje ratne štete učinjene tokom rata 1941-1945. od okupatora sa specifikacijom i financijskim podacima." ;
+    rico:isDirectlyIncludedIn <OpciSpisiPoPredmetima> ;
+    rico:directlyPrecedesInSequence <InvesticionoObrtniZajmovi> ;
+    rico:isAssociatedWithDate [ a               rico:Date ;
+								rico:normalizedDate       "1945" ;
+								] ;
+    rico:isAssociatedWithDate [ a               rico:Date ;
+								rico:normalizedDate       "1946" ;
+								] .
+<RatnaSteta-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <RatnaSteta> ;
+	rico:hasCarrierType <papir> .
+<InvesticionoObrtniZajmovi> a rico:RecordSet ;
+    rico:identifier "b1k" ;
+    rico:name "Investiciono-obrtni zajmovi, 1946-1948." ;
+    rico:scopeAndContent "Podserija pod 1k) sadrži rješenje o dodjeli investicionih i obrtnih kredita saveznih i republičkih organa, rješenja o namjenskom trošenju kredita, otvaranja akreditiva po bankama, izvještaji o trošenju sredstava i dr." ;
+    rico:isDirectlyIncludedIn <OpciSpisiPoPredmetima> ;
+    rico:directlyPrecedesInSequence <DokumentacijaRestorana> ;
+    rico:isAssociatedWithDate [ a               rico:beginningDate ;
+								rico:normalizedDate       "1946" ;
+								] ;
+    rico:isAssociatedWithDate [ a               rico:endDate ;
+								rico:normalizedDate       "1948" ;
+								] .
+<InvesticionoObrtniZajmovi-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <InvesticionoObrtniZajmovi> ;
+	rico:hasCarrierType <papir> .
+<DokumentacijaRestorana> a rico:RecordSet ;
+    rico:identifier "b1l" ;
+    rico:name "Dokumenti restorana pivovare, 1940-1948." ;
+    rico:isDirectlyIncludedIn <OpciSpisiPoPredmetima> ;
+    rico:directlyPrecedesInSequence <SladaraSisakPripojenje> ;
+    rico:isAssociatedWithDate [ a               rico:beginningDate ;
+								rico:normalizedDate       "1940" ;
+								] ;
+    rico:isAssociatedWithDate [ a               rico:endDate ;
+								rico:normalizedDate       "1948" ;
+								] .
+<DokumentacijaRestorana-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <DokumentacijaRestorana> ;
+	rico:hasCarrierType <papir> .
+<SladaraSisakPripojenje> a rico:RecordSet ;
+    rico:identifier "b1m" ;
+    rico:name "Sladara Sisak - pripojenje Daruvarskoj pivovari 1948." ;
+    rico:isDirectlyIncludedIn <OpciSpisiPoPredmetima> ;
+    rico:directlyPrecedesInSequence <GlavneSkupstine> ;
+    rico:isAssociatedWithDate [ a               rico:Date ;
+								rico:normalizedDate       "1948" ;
+								] .
+<SladaraSisakPripojenje-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <SladaraSisakPripojenje> ;
+	rico:hasCarrierType <papir> .
+<GlavneSkupstine> a rico:RecordSet ;
+    rico:identifier "b2" ;
+    rico:name "Glavne skupštine, 1932, 1934-1944." ;
+    rico:scopeAndContent "Najvažniji dokumenti u fondu nalaze se u podseriji Glavne skupštine koje za svaku godinu sadrže sljedeće dokumente: zapisnik, izvještaj ravnateljstva i nadzornog vijeća, godišnju bilancu, spisak dioničara s brojem dionica, spisak službenika s mjesečnim prinadležnostima, prijave za društveni porez na ukupni dohodak (dobitak), pozive i dr." ;
+    rico:isDirectlyIncludedIn <SerijaBSpisi> ;
+    rico:directlyPrecedesInSequence <Varia> ;
+    rico:isAssociatedWithDate [ a               rico:Date ;
+								rico:normalizedDate       "1932" ;
+								] ;
+    rico:isAssociatedWithDate [ a               rico:beginningDate ;
+								rico:normalizedDate       "1934" ;
+								] ;
+	rico:isAssociatedWithDate [ a               rico:endDate ;
+								rico:normalizedDate      "1944" ;
+								] ;
+	rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "fascikl" ;
+							] .
+<GlavneSkupstine-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <GlavneSkupstine> ;
+	rico:hasCarrierType <papir> .
+<Varia> a rico:RecordSet ;
+    rico:identifier "b3" ;
+    rico:name "Varia (izresci iz štampe, biltena, plakata i dr) 1927-1940" ;
+    rico:scopeAndContent "Podserija 3. Varia sadrži izreske iz dnevne štampe, stručne literature, biltena i službenih listova, a tretira se stanje u pivovarskoj industriji u Jugoslaviji i svijetu, porezna politika, pitanje nadnica, otvaranje gostionica i obrta i sl. Štampa je razvrstana po vremenskom periodu." ;
+    rico:isDirectlyIncludedIn <SerijaBSpisi> ;
+    rico:isAssociatedWithDate [ a               rico:beginningDate ;
+								rico:normalizedDate       "1927" ;
+								] ;
+	rico:isAssociatedWithDate [ a               rico:endDate ;
+								rico:normalizedDate      "1940" ;
+								] ;
+	rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "fascikl" ;
+							] .
+<Varia-i1> a rico:Instantiation ;
+	rico:isOrWasInstatiationOf <Varia> ;
+	rico:hasCarrierType <papir> .
+    
+    
